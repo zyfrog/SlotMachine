@@ -14,6 +14,8 @@
 		BC8EBB421A9EBCA900CDAA50 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC8EBB411A9EBCA900CDAA50 /* Images.xcassets */; };
 		BC8EBB451A9EBCA900CDAA50 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC8EBB431A9EBCA900CDAA50 /* LaunchScreen.xib */; };
 		BC8EBB511A9EBCA900CDAA50 /* SlotMachineDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BC8EBB501A9EBCA900CDAA50 /* SlotMachineDemoTests.m */; };
+		BC8EBB5C1A9EBCCE00CDAA50 /* SlotItem.m in Sources */ = {isa = PBXBuildFile; fileRef = BC8EBB5B1A9EBCCE00CDAA50 /* SlotItem.m */; };
+		BC8EBB5F1A9F00F300CDAA50 /* SlotView.m in Sources */ = {isa = PBXBuildFile; fileRef = BC8EBB5E1A9F00F300CDAA50 /* SlotView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +42,10 @@
 		BC8EBB4A1A9EBCA900CDAA50 /* SlotMachineDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SlotMachineDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC8EBB4F1A9EBCA900CDAA50 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BC8EBB501A9EBCA900CDAA50 /* SlotMachineDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SlotMachineDemoTests.m; sourceTree = "<group>"; };
+		BC8EBB5A1A9EBCCE00CDAA50 /* SlotItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SlotItem.h; sourceTree = "<group>"; };
+		BC8EBB5B1A9EBCCE00CDAA50 /* SlotItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SlotItem.m; sourceTree = "<group>"; };
+		BC8EBB5D1A9F00F300CDAA50 /* SlotView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SlotView.h; sourceTree = "<group>"; };
+		BC8EBB5E1A9F00F300CDAA50 /* SlotView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SlotView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +87,7 @@
 		BC8EBB331A9EBCA900CDAA50 /* SlotMachineDemo */ = {
 			isa = PBXGroup;
 			children = (
+				BC8EBB601A9F010000CDAA50 /* Slot */,
 				BC8EBB381A9EBCA900CDAA50 /* AppDelegate.h */,
 				BC8EBB391A9EBCA900CDAA50 /* AppDelegate.m */,
 				BC8EBB3B1A9EBCA900CDAA50 /* ViewController.h */,
@@ -117,6 +124,17 @@
 				BC8EBB4F1A9EBCA900CDAA50 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BC8EBB601A9F010000CDAA50 /* Slot */ = {
+			isa = PBXGroup;
+			children = (
+				BC8EBB5A1A9EBCCE00CDAA50 /* SlotItem.h */,
+				BC8EBB5B1A9EBCCE00CDAA50 /* SlotItem.m */,
+				BC8EBB5D1A9F00F300CDAA50 /* SlotView.h */,
+				BC8EBB5E1A9F00F300CDAA50 /* SlotView.m */,
+			);
+			name = Slot;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -221,6 +239,8 @@
 			files = (
 				BC8EBB3D1A9EBCA900CDAA50 /* ViewController.m in Sources */,
 				BC8EBB3A1A9EBCA900CDAA50 /* AppDelegate.m in Sources */,
+				BC8EBB5C1A9EBCCE00CDAA50 /* SlotItem.m in Sources */,
+				BC8EBB5F1A9F00F300CDAA50 /* SlotView.m in Sources */,
 				BC8EBB371A9EBCA900CDAA50 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -344,6 +364,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SlotMachineDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -354,6 +375,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SlotMachineDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
